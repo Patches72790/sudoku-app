@@ -1,6 +1,4 @@
-import './App.css';
-import { Square, Board, Game } from './components/Square';
-
+import { Game } from './components/Game';
 
 function App() {
   return (

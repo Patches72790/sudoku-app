@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, MouseEventHandler } from "react";
+import Identifer from "./Identifier";
 
-export const Square = (props: Number) => {
-
+export const Square = (prop: { myNum: Number, onClick: MouseEventHandler }) => {
 
     return (
-        <div>
-
-        </div>
+        <td>
+            <button onClick={prop.onClick}>
+                { prop.myNum } 
+            </button>
+        </td>
     );
 }
